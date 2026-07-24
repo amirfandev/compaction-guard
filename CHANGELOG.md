@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-07-24
+
+First release.
+
 ### Added
 
 - `Guard`, generic over the caller's context type, with `REPAIR`, `RAISE`, and
@@ -56,3 +60,6 @@ fixture:
   the stale-after-`add()` error now names the re-pin paths.
 - Module-level `check()` accepts bare constraint strings, matching the
   `Guard` constructor.
+
+[Unreleased]: https://github.com/amirfandev/compaction-guard/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/amirfandev/compaction-guard/releases/tag/v0.1.0
