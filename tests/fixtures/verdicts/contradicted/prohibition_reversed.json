@@ -1,0 +1,7 @@
+{
+  "label": "contradicted",
+  "invariant": "Never deploy to eu-west-1.",
+  "summary": "Deploying to eu-west-1 is now allowed.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

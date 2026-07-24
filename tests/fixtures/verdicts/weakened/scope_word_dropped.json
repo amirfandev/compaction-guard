@@ -1,0 +1,8 @@
+{
+  "label": "weakened",
+  "invariant": "Do not select PII columns from customer tables.",
+  "summary": "Summary of the session so far. Do not select PII columns from tables. Remaining work continues as planned.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted",
+  "note": "Scope generalisation by deleting one content word. A symmetric similarity ratio rewards deletions and certified this PRESERVED at 0.93; ordered content-token recall must fail it. The core tier cannot prove weakening here, so the honest verdict is UNVERIFIABLE."
+}

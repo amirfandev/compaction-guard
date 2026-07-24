@@ -1,0 +1,7 @@
+{
+  "label": "mutated",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "The database orders_dev is production. Read-only queries only.",
+  "expected_kind": "mutated",
+  "expected_decided_by": "lexical.anchor_diff"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "anthropic_blocks",
+  "context": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Running the check now."
+        },
+        {
+          "type": "tool_use",
+          "id": "tu1",
+          "name": "query_db",
+          "input": {
+            "table": "orders_prod",
+            "limit": "10"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "tu1",
+          "content": "3 rows"
+        }
+      ]
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "Running the check now.",
+    "query_db",
+    "orders_prod",
+    "3 rows"
+  ],
+  "skipped_blocks": 0
+}

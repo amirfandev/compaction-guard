@@ -1,0 +1,7 @@
+{
+  "label": "contradicted",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "Writes to orders_prod are fine now.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

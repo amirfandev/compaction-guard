@@ -1,0 +1,7 @@
+{
+  "label": "unverifiable",
+  "invariant": "Rotate the api keys and audit the logs every day.",
+  "summary": "Rotate the api keys and audit logs regularly.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

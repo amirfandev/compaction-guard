@@ -1,0 +1,7 @@
+{
+  "label": "contradicted",
+  "invariant": "Only read queries on orders_prod.",
+  "summary": "Write queries on orders_prod are permitted.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality"
+}

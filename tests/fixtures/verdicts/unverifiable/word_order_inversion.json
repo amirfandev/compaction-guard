@@ -1,0 +1,8 @@
+{
+  "label": "unverifiable",
+  "invariant": "Point analytics queries at replica_02, not the primary.",
+  "summary": "Summary of the session. Point analytics queries at the primary, not replica_02. Remaining work continues.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted",
+  "note": "Word-order inversion reverses the meaning while keeping the exact token bag. Set containment scored this 1.0 and certified PRESERVED, a confirmed false certify; ordered matching must refuse, and the honest core-tier answer is UNVERIFIABLE."
+}

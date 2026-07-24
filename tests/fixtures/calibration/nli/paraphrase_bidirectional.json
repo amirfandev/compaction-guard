@@ -1,0 +1,7 @@
+{
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "A spending cap of $500 applies to this run.",
+  "expected": "paraphrased",
+  "expected_score": 0.994,
+  "note": "Entailment in both directions with the value anchor intact in the window. Observed at nli-deberta-v3-xsmall ONNX revision 2a4f614a7013."
+}

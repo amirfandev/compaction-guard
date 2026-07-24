@@ -1,0 +1,22 @@
+{
+  "name": "responses_items",
+  "context": [
+    {
+      "type": "function_call",
+      "name": "query_db",
+      "arguments": "{\"table\": \"orders_prod\"}"
+    },
+    {
+      "type": "function_call_output",
+      "output": "ok: 3 rows"
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "query_db",
+    "orders_prod",
+    "3 rows"
+  ],
+  "skipped_blocks": 0
+}

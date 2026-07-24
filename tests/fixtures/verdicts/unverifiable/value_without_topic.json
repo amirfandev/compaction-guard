@@ -1,0 +1,7 @@
+{
+  "label": "unverifiable",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "Roughly $500 was discussed.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

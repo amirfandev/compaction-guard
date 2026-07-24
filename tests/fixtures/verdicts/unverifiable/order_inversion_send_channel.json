@@ -1,0 +1,8 @@
+{
+  "label": "unverifiable",
+  "invariant": "Send replies from support@acme.com, never from personal accounts.",
+  "summary": "Never send replies from support@acme.com; personal accounts are the send channel from now on.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted",
+  "note": "The summary inverts the rule using only the invariant's own words. A token-bag match certified this PRESERVED; contradiction detection needs a semantic layer, so the core tier must land on UNVERIFIABLE, never a certification."
+}

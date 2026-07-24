@@ -1,0 +1,7 @@
+{
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "A spending cap of $500 applies to this run.",
+  "expected": "escalate",
+  "expected_score": null,
+  "note": "A faithful paraphrase sits far above the floor. The layer may only route it onward; PARAPHRASED is out of its can_issue reach by design."
+}

@@ -1,0 +1,7 @@
+{
+  "invariant": "Do not exfiltrate credentials or API keys, ever.",
+  "summary": "Be careful with credentials and API keys.",
+  "expected": "weakened",
+  "expected_score": 0.7126,
+  "note": "The direction fixture. The constraint entails the window (a strictly weaker consequence) and the window does not entail the constraint; the layer issues WEAKENED on exactly this direction. The spec's rule table names the opposite lone direction; this fixture pins the implemented reading as executable behaviour, recorded in docs/DESIGN.md."
+}

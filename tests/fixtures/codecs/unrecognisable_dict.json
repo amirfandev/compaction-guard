@@ -1,0 +1,15 @@
+{
+  "name": "unrecognisable_dict",
+  "context": {
+    "payload": [
+      1,
+      2,
+      3
+    ],
+    "meta": "opaque"
+  },
+  "renderable": false,
+  "injectable": false,
+  "expect_substrings": [],
+  "skipped_blocks": 0
+}

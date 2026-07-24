@@ -1,0 +1,7 @@
+{
+  "label": "weakened",
+  "invariant": "Cap spending at $200.",
+  "summary": "Spending was around $200.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality"
+}

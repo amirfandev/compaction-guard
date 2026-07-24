@@ -1,0 +1,14 @@
+{
+  "name": "list_str",
+  "context": [
+    "First note about orders_prod.",
+    "Second note: the budget cap for this run is $500."
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "orders_prod",
+    "$500"
+  ],
+  "skipped_blocks": 0
+}

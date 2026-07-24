@@ -1,0 +1,7 @@
+{
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "The quarterly newsletter draft is waiting on two more photos.",
+  "expected": "escalate",
+  "expected_score": null,
+  "note": "Neutral everywhere: no window shares enough with the constraint. The layer returns None and lets the chain decide absence."
+}

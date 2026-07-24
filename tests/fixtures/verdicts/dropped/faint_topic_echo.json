@@ -1,0 +1,7 @@
+{
+  "label": "dropped",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "A database was mentioned in passing.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

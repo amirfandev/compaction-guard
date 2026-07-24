@@ -1,0 +1,7 @@
+{
+  "label": "preserved",
+  "invariant": "Deploy only to region us-east-1, never to eu-west-1.",
+  "summary": "Deploy only to region us-east-1 and never to eu-west-1 please.",
+  "expected_kind": "preserved",
+  "expected_decided_by": "lexical.exact"
+}

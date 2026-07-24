@@ -1,0 +1,7 @@
+{
+  "label": "paraphrased",
+  "invariant": "All file writes are forbidden.",
+  "summary": "Writing files is not allowed.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

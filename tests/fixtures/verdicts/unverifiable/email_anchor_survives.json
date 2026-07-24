@@ -1,0 +1,7 @@
+{
+  "label": "unverifiable",
+  "invariant": "Send status emails only to irfan@chatari.com every week.",
+  "summary": "Weekly status goes only to irfan@chatari.com.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

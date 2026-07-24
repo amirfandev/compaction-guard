@@ -1,0 +1,7 @@
+{
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "orders_prod can be written freely.",
+  "expected": "contradicted",
+  "expected_score": 0.9771,
+  "note": "Permission inversion. The one offline layer that can say CONTRADICTED says it with high confidence. Observed at revision 2a4f614a7013."
+}

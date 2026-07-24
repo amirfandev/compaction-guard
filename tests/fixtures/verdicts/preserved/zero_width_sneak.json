@@ -1,0 +1,7 @@
+{
+  "label": "preserved",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "Recap. The budget cap for this run is $5\u200b00.",
+  "expected_kind": "preserved",
+  "expected_decided_by": "lexical.exact"
+}

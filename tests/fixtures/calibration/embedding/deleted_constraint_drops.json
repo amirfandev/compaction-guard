@@ -1,0 +1,7 @@
+{
+  "invariant": "Never fabricate citations or data in reports.",
+  "summary": "Lunch orders were collected and the totals sent to accounting.",
+  "expected": "dropped",
+  "expected_score": 0.27,
+  "note": "A deletion summary in the corpus shape. Observed max cosine 0.27, below the 0.35 floor, at potion-base-8M revision bf8b056651a2."
+}

@@ -1,0 +1,7 @@
+{
+  "label": "dropped",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "The team fixed the parser and shipped release notes.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

@@ -1,0 +1,8 @@
+{
+  "label": "weakened",
+  "invariant": "Never delete rows from the users table.",
+  "summary": "Avoid removing rows from the users table when you can. The reviewer said the dashboard should never be cached.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality",
+  "note": "The constraint is weakened; the word never in the unrelated dashboard sentence must not mask the loss. Whole-view modality pooling downgraded this to non-gating UNVERIFIABLE."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "unrecognisable_scalar_member",
+  "context": [
+    42
+  ],
+  "renderable": false,
+  "injectable": false,
+  "expect_substrings": [],
+  "skipped_blocks": 0
+}

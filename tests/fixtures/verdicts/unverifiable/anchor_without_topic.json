@@ -1,0 +1,7 @@
+{
+  "label": "unverifiable",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "orders_prod exists.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

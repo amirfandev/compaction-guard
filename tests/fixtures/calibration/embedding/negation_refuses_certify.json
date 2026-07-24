@@ -1,0 +1,7 @@
+{
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "orders_prod can be written freely.",
+  "expected": "escalate",
+  "expected_score": null,
+  "note": "The mandatory negation case: read-only versus written freely. Cosine similarity is high because the words share a neighbourhood, so the floor does not fire, and the layer must escalate rather than certify anything. Observed at potion-base-8M revision bf8b056651a2."
+}

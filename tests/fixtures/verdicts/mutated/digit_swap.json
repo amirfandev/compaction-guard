@@ -1,0 +1,7 @@
+{
+  "label": "mutated",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "The budget cap for this run is $5000.",
+  "expected_kind": "mutated",
+  "expected_decided_by": "lexical.anchor_diff"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "content_blocks",
+  "context": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "The budget cap for this run is $500."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "data:image/png;base64,AAAA"
+          }
+        }
+      ]
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "$500"
+  ],
+  "skipped_blocks": 1
+}

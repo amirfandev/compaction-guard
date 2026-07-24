@@ -1,0 +1,20 @@
+{
+  "name": "legacy_function_call",
+  "context": [
+    {
+      "role": "assistant",
+      "content": null,
+      "function_call": {
+        "name": "fetch_report",
+        "arguments": "{\"period\": \"weekly\"}"
+      }
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "fetch_report",
+    "weekly"
+  ],
+  "skipped_blocks": 0
+}

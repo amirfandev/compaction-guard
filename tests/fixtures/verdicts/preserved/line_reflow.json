@@ -1,0 +1,7 @@
+{
+  "label": "preserved",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "Notes so far.\nThe budget cap\nfor this run\nis $500.\nMore notes.",
+  "expected_kind": "preserved",
+  "expected_decided_by": "lexical.exact"
+}

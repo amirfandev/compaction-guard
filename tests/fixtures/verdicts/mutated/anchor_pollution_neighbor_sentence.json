@@ -1,0 +1,8 @@
+{
+  "label": "mutated",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "The budget cap for this run is $5000. Earlier a $500 refund was issued to the customer.",
+  "expected_kind": "mutated",
+  "expected_decided_by": "lexical.anchor_diff",
+  "note": "The cap is mutated to $5000; the stray $500 in the unrelated refund sentence must not satisfy the anchor-survival check. Site-level anchor pooling certified this PRESERVED, a confirmed false certify."
+}

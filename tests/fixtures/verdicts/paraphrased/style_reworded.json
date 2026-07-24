@@ -1,0 +1,7 @@
+{
+  "label": "paraphrased",
+  "invariant": "Keep answers short and simple.",
+  "summary": "Responses stay brief and plain.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

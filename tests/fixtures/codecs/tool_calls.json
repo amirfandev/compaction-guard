@@ -1,0 +1,32 @@
+{
+  "name": "tool_calls",
+  "context": [
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_1",
+          "type": "function",
+          "function": {
+            "name": "run_sql",
+            "arguments": "{\"database\": \"orders_prod\", \"query\": \"SELECT count(*) FROM orders\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_1",
+      "content": "42 rows"
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "run_sql",
+    "orders_prod",
+    "42 rows"
+  ],
+  "skipped_blocks": 0
+}

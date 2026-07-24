@@ -1,0 +1,7 @@
+{
+  "label": "mutated",
+  "invariant": "Cap spending at $200.",
+  "summary": "Spending is unrestricted now.",
+  "expected_kind": "mutated",
+  "expected_decided_by": "lexical.anchor_diff"
+}

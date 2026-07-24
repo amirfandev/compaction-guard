@@ -1,0 +1,7 @@
+{
+  "label": "weakened",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "The database orders_prod is production; queries run there regularly.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality"
+}

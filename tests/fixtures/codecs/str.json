@@ -1,0 +1,11 @@
+{
+  "name": "str",
+  "context": "Notes so far. The database orders_prod is production. Read-only queries only.",
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "orders_prod",
+    "Read-only"
+  ],
+  "skipped_blocks": 0
+}

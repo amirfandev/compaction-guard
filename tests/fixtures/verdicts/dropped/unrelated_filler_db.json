@@ -1,0 +1,7 @@
+{
+  "label": "dropped",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "Discussed the weather and lunch plans at length.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

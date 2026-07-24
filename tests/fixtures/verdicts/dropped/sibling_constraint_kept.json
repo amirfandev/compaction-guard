@@ -1,0 +1,7 @@
+{
+  "label": "dropped",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "Work continued smoothly. The budget cap for this run is $500.",
+  "expected_kind": "dropped",
+  "expected_decided_by": "lexical.miss"
+}

@@ -1,0 +1,7 @@
+{
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "The weather delayed the offsite, so the meetup moved to Thursday.",
+  "expected": "dropped",
+  "expected_score": -0.0076,
+  "note": "No semantic trace at all. Observed max cosine at potion-base-8M revision bf8b056651a2; the test tolerates small cross-platform numeric drift."
+}

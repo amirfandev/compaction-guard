@@ -1,0 +1,25 @@
+{
+  "name": "openai_dicts",
+  "context": [
+    {
+      "role": "system",
+      "content": "You are a deployment assistant."
+    },
+    {
+      "role": "user",
+      "content": "The database orders_prod is production. Read-only queries only."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood."
+    }
+  ],
+  "renderable": true,
+  "injectable": true,
+  "expect_substrings": [
+    "deployment assistant",
+    "orders_prod",
+    "Understood."
+  ],
+  "skipped_blocks": 0
+}

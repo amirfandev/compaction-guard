@@ -1,0 +1,7 @@
+{
+  "label": "paraphrased",
+  "invariant": "Never deploy to eu-west-1.",
+  "summary": "Deployments to the eu-west-1 region are off limits.",
+  "expected_kind": "unverifiable",
+  "expected_decided_by": "chain.exhausted"
+}

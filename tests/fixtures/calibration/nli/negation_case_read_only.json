@@ -1,0 +1,7 @@
+{
+  "invariant": "The database orders_prod is read-only only.",
+  "summary": "orders_prod can be written freely.",
+  "expected": "contradicted",
+  "expected_score": 0.998,
+  "note": "The spec's mandatory negation pair: read-only only versus can be written freely. The embedding layer refuses to certify it (its own fixture); this layer names the contradiction."
+}

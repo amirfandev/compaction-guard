@@ -1,0 +1,7 @@
+{
+  "label": "weakened",
+  "invariant": "You must not write to orders_prod.",
+  "summary": "Take care when you write to orders_prod.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality"
+}

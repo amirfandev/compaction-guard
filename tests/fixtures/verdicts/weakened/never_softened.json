@@ -1,0 +1,7 @@
+{
+  "label": "weakened",
+  "invariant": "Never deploy on fridays.",
+  "summary": "Deploy on fridays with caution.",
+  "expected_kind": "weakened",
+  "expected_decided_by": "lexical.modality"
+}

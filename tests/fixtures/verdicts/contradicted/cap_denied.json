@@ -1,0 +1,7 @@
+{
+  "label": "contradicted",
+  "invariant": "The budget cap for this run is $500.",
+  "summary": "There is no budget cap for this run; spend freely.",
+  "expected_kind": "mutated",
+  "expected_decided_by": "lexical.anchor_diff"
+}

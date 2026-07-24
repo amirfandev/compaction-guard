@@ -1,0 +1,7 @@
+{
+  "label": "preserved",
+  "invariant": "The database orders_prod is production. Read-only queries only.",
+  "summary": "Recap: work continued. The database orders_prod is production. Read-only queries only. Next step is tests.",
+  "expected_kind": "preserved",
+  "expected_decided_by": "lexical.exact"
+}

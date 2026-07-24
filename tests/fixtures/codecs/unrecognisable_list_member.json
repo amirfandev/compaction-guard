@@ -1,0 +1,12 @@
+{
+  "name": "unrecognisable_list_member",
+  "context": [
+    {
+      "blob": "a dict with no message keys"
+    }
+  ],
+  "renderable": false,
+  "injectable": true,
+  "expect_substrings": [],
+  "skipped_blocks": 0
+}
