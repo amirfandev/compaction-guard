@@ -1,0 +1,370 @@
+{
+  "corpus": {
+    "cases": 300,
+    "file": "evidence/corpus.jsonl",
+    "labels": {
+      "contradicted": 46,
+      "dropped": 40,
+      "mutated": 39,
+      "paraphrased": 40,
+      "preserved": 92,
+      "weakened": 43
+    },
+    "operators": {
+      "block_carried": 6,
+      "deletion": 20,
+      "digit_swap": 16,
+      "filler_replacement": 20,
+      "identifier_swap": 12,
+      "identity": 40,
+      "magnitude_shift": 5,
+      "modality_strip": 40,
+      "noise": 40,
+      "paraphrase": 40,
+      "permission_broadening": 6,
+      "permission_inversion": 40,
+      "scope_generalisation": 3,
+      "tail_only": 6,
+      "value_omission": 6
+    },
+    "scaffolds": {
+      "kept_tail": 114,
+      "plain": 83,
+      "stale_block": 103
+    },
+    "seeds": 40,
+    "sha256": "ac4021921b5bad3d9402147df8df269eb5f052e2d80fb61c8b07c4db6d4e6810"
+  },
+  "generated_by": "python evidence/recompute.py",
+  "note": "Tiers marked not_run lacked their optional extra in the environment that produced this file. Install the extra and rerun python evidence/recompute.py to fill them in; committed numbers for a tier exist only if that tier actually ran.",
+  "prevention": {
+    "assert_present_failures": 0,
+    "canonical_text_present": 300,
+    "cases": 300,
+    "policy": "repair",
+    "present_rate": 1.0
+  },
+  "schema_version": 1,
+  "tiers": {
+    "core": {
+      "at_risk_findings": 6,
+      "confusion": {
+        "contradicted": {
+          "dropped": 5,
+          "mutated": 8,
+          "unverifiable": 12,
+          "weakened": 21
+        },
+        "dropped": {
+          "dropped": 40
+        },
+        "mutated": {
+          "mutated": 39
+        },
+        "paraphrased": {
+          "dropped": 3,
+          "unverifiable": 35,
+          "weakened": 2
+        },
+        "preserved": {
+          "preserved": 92
+        },
+        "weakened": {
+          "mutated": 2,
+          "unverifiable": 10,
+          "weakened": 31
+        }
+      },
+      "decided_by": {
+        "chain.block_echo": 6,
+        "chain.exhausted": 57,
+        "lexical.anchor_diff": 49,
+        "lexical.exact": 86,
+        "lexical.miss": 48,
+        "lexical.modality": 54
+      },
+      "detectors": [
+        "lexical"
+      ],
+      "false_certify": {
+        "cases": [],
+        "count": 0,
+        "definition": "cases labeled mutated, contradicted or dropped that this tier verdicts as preserved or paraphrased",
+        "rate": 0.0
+      },
+      "per_kind": {
+        "contradicted": {
+          "correct": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 46
+        },
+        "dropped": {
+          "correct": 40,
+          "precision": 0.8333,
+          "predicted": 48,
+          "recall": 1.0,
+          "support": 40
+        },
+        "mutated": {
+          "correct": 39,
+          "precision": 0.7959,
+          "predicted": 49,
+          "recall": 1.0,
+          "support": 39
+        },
+        "paraphrased": {
+          "correct": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 40
+        },
+        "preserved": {
+          "correct": 92,
+          "precision": 1.0,
+          "predicted": 92,
+          "recall": 1.0,
+          "support": 92
+        },
+        "unverifiable": {
+          "correct": 0,
+          "precision": 0.0,
+          "predicted": 57,
+          "recall": null,
+          "support": 0
+        },
+        "weakened": {
+          "correct": 31,
+          "precision": 0.5741,
+          "predicted": 54,
+          "recall": 0.7209,
+          "support": 43
+        }
+      },
+      "status": "ran",
+      "survived_in": {
+        "reassertion_block": 6,
+        "retained_tail": 6,
+        "summary": 134
+      }
+    },
+    "core+embeddings": {
+      "at_risk_findings": 6,
+      "confusion": {
+        "contradicted": {
+          "dropped": 3,
+          "mutated": 8,
+          "unverifiable": 14,
+          "weakened": 21
+        },
+        "dropped": {
+          "dropped": 38,
+          "unverifiable": 2
+        },
+        "mutated": {
+          "mutated": 39
+        },
+        "paraphrased": {
+          "unverifiable": 38,
+          "weakened": 2
+        },
+        "preserved": {
+          "preserved": 92
+        },
+        "weakened": {
+          "mutated": 2,
+          "unverifiable": 10,
+          "weakened": 31
+        }
+      },
+      "decided_by": {
+        "chain.block_echo": 6,
+        "chain.exhausted": 64,
+        "embedding.floor": 41,
+        "lexical.anchor_diff": 49,
+        "lexical.exact": 86,
+        "lexical.modality": 54
+      },
+      "detectors": [
+        "lexical",
+        "embedding"
+      ],
+      "false_certify": {
+        "cases": [],
+        "count": 0,
+        "definition": "cases labeled mutated, contradicted or dropped that this tier verdicts as preserved or paraphrased",
+        "rate": 0.0
+      },
+      "per_kind": {
+        "contradicted": {
+          "correct": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 46
+        },
+        "dropped": {
+          "correct": 38,
+          "precision": 0.9268,
+          "predicted": 41,
+          "recall": 0.95,
+          "support": 40
+        },
+        "mutated": {
+          "correct": 39,
+          "precision": 0.7959,
+          "predicted": 49,
+          "recall": 1.0,
+          "support": 39
+        },
+        "paraphrased": {
+          "correct": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 40
+        },
+        "preserved": {
+          "correct": 92,
+          "precision": 1.0,
+          "predicted": 92,
+          "recall": 1.0,
+          "support": 92
+        },
+        "unverifiable": {
+          "correct": 0,
+          "precision": 0.0,
+          "predicted": 64,
+          "recall": null,
+          "support": 0
+        },
+        "weakened": {
+          "correct": 31,
+          "precision": 0.5741,
+          "predicted": 54,
+          "recall": 0.7209,
+          "support": 43
+        }
+      },
+      "status": "ran",
+      "survived_in": {
+        "reassertion_block": 6,
+        "retained_tail": 6,
+        "summary": 134
+      }
+    },
+    "core+embeddings+nli": {
+      "at_risk_findings": 6,
+      "confusion": {
+        "contradicted": {
+          "contradicted": 13,
+          "dropped": 3,
+          "mutated": 8,
+          "unverifiable": 1,
+          "weakened": 21
+        },
+        "dropped": {
+          "dropped": 38,
+          "unverifiable": 2
+        },
+        "mutated": {
+          "mutated": 39
+        },
+        "paraphrased": {
+          "contradicted": 2,
+          "paraphrased": 33,
+          "unverifiable": 2,
+          "weakened": 3
+        },
+        "preserved": {
+          "preserved": 92
+        },
+        "weakened": {
+          "mutated": 2,
+          "paraphrased": 4,
+          "unverifiable": 3,
+          "weakened": 34
+        }
+      },
+      "decided_by": {
+        "chain.block_echo": 6,
+        "chain.exhausted": 8,
+        "embedding.floor": 41,
+        "lexical.anchor_diff": 49,
+        "lexical.exact": 86,
+        "lexical.modality": 54,
+        "nli.bidirectional": 56
+      },
+      "detectors": [
+        "lexical",
+        "embedding",
+        "nli"
+      ],
+      "false_certify": {
+        "cases": [],
+        "count": 0,
+        "definition": "cases labeled mutated, contradicted or dropped that this tier verdicts as preserved or paraphrased",
+        "rate": 0.0
+      },
+      "per_kind": {
+        "contradicted": {
+          "correct": 13,
+          "precision": 0.8667,
+          "predicted": 15,
+          "recall": 0.2826,
+          "support": 46
+        },
+        "dropped": {
+          "correct": 38,
+          "precision": 0.9268,
+          "predicted": 41,
+          "recall": 0.95,
+          "support": 40
+        },
+        "mutated": {
+          "correct": 39,
+          "precision": 0.7959,
+          "predicted": 49,
+          "recall": 1.0,
+          "support": 39
+        },
+        "paraphrased": {
+          "correct": 33,
+          "precision": 0.8919,
+          "predicted": 37,
+          "recall": 0.825,
+          "support": 40
+        },
+        "preserved": {
+          "correct": 92,
+          "precision": 1.0,
+          "predicted": 92,
+          "recall": 1.0,
+          "support": 92
+        },
+        "unverifiable": {
+          "correct": 0,
+          "precision": 0.0,
+          "predicted": 8,
+          "recall": null,
+          "support": 0
+        },
+        "weakened": {
+          "correct": 34,
+          "precision": 0.5862,
+          "predicted": 58,
+          "recall": 0.7907,
+          "support": 43
+        }
+      },
+      "status": "ran",
+      "survived_in": {
+        "reassertion_block": 6,
+        "retained_tail": 6,
+        "summary": 175
+      }
+    }
+  }
+}
