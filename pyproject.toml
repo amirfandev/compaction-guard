@@ -1,0 +1,146 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "compaction-guard"
+version = "0.1.0"
+description = "Keeps registered constraints present in LLM agent context across compaction, and classifies what the summariser did to them."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Muhammad Irfan", email = "irfan@chatari.com" }]
+keywords = [
+    "llm",
+    "agents",
+    "context",
+    "compaction",
+    "summarization",
+    "constraints",
+    "safety",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+# The core is stdlib only. Anything appearing here breaks the central promise
+# of the package; CI has a job that fails if this list grows.
+dependencies = []
+
+[project.optional-dependencies]
+embeddings = [
+    "model2vec",
+    "numpy",
+]
+# The heaviest extra; documented as such in the README.
+nli = [
+    "onnxruntime",
+    "tokenizers",
+    "huggingface-hub",
+]
+langchain = [
+    "langchain>=1.0",
+]
+openai-agents = [
+    "openai-agents",
+]
+anthropic = [
+    "anthropic",
+]
+# There is deliberately no judge extra. The judge is a callable the caller
+# writes; this package ships no HTTP client and imports no model SDK.
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+
+[project.urls]
+Repository = "https://github.com/amirfandev/compaction-guard"
+Issues = "https://github.com/amirfandev/compaction-guard/issues"
+Changelog = "https://github.com/amirfandev/compaction-guard/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/compaction_guard"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".design",
+    ".github",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # import sorting
+    "UP",  # pyupgrade, keeps 3.11+ idioms honest
+    "B",   # bugbear
+    "C4",  # comprehension cleanups
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Verdict and codec fixtures embed invariant and summary text verbatim;
+# breaking those strings to satisfy the line limit would change the fixture.
+"tests/**" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["compaction_guard"]
+
+[tool.mypy]
+# No python_version pin. Pinning it to the floor means mypy parses every
+# installed stub under that version's grammar, and a dependency whose stubs use
+# newer syntax then fails the check for reasons that have nothing to do with
+# this package (numpy 2.5 ships 3.12 type statements). The CI matrix runs mypy
+# on 3.11, 3.12 and 3.13, so each version is checked by the interpreter that
+# actually has to run the code, which is stronger than one pinned assumption.
+files = ["src"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_return_any = true
+strict_equality = true
+extra_checks = true
+
+# Optional extras are lazy imports. The dev environment installs none of
+# them, so mypy must not fail on their absence. follow_imports = "skip" is
+# needed as well as ignore_missing_imports: when an extra IS installed, mypy
+# type-checks its stubs against python_version 3.11, and numpy 2.5 ships stubs
+# using 3.12 type statements. That is a fact about numpy, not about this
+# package, and it must not turn a working install into a failing check.
+[[tool.mypy.overrides]]
+follow_imports = "skip"
+module = [
+    "model2vec",
+    "model2vec.*",
+    "numpy",
+    "numpy.*",
+    "onnxruntime.*",
+    "tokenizers.*",
+    "huggingface_hub.*",
+    "langchain.*",
+    "langchain_core.*",
+    "agents.*",
+    "openai_agents.*",
+    "anthropic.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

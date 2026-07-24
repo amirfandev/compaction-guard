@@ -1,0 +1,30 @@
+# Design notes stay local; they are working papers, not part of the repo.
+.design/
+
+# Byte-compiled and packaging output
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+wheels/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
