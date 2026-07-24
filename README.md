@@ -4,8 +4,8 @@ Keeps registered constraints present in an LLM agent's context across
 compaction, and classifies what the summariser did to them.
 
 [![CI](https://github.com/amirfandev/compaction-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/amirfandev/compaction-guard/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/compaction-guard)](https://pypi.org/project/compaction-guard/)
-[![Python](https://img.shields.io/pypi/pyversions/compaction-guard)](https://pypi.org/project/compaction-guard/)
+[![PyPI](https://img.shields.io/pypi/v/compaction-guard?cacheSeconds=3600)](https://pypi.org/project/compaction-guard/)
+[![Python](https://img.shields.io/pypi/pyversions/compaction-guard?cacheSeconds=3600)](https://pypi.org/project/compaction-guard/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## The problem
